@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: MediaQuery.of(context).size.width<=600? Text(" Mobile Screen"),
       ),
     );
   }
