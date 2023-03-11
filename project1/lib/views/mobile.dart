@@ -17,6 +17,7 @@ class _MobilescreenState extends State<Mobilescreen> {
       ),
       bottomNavigationBar: CupertinoTabBar(items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
       ]),
     );
   }
