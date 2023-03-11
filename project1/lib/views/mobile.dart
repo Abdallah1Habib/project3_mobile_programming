@@ -16,11 +16,37 @@ class _MobilescreenState extends State<Mobilescreen> {
       appBar: AppBar(
         title: Text("Mobile screen"),
       ),
-      bottomNavigationBar: CupertinoTabBar(
-        backgroundColor: mobcolor,
-        items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home,color: primarycolor,), label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.search,color: secondarycolor,), label: ""),
+      bottomNavigationBar: CupertinoTabBar(backgroundColor: mobcolor, items: [
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              color: primarycolor,
+            ),
+            label: ""),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.search,
+              color: secondarycolor,
+            ),
+            label: ""),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.add_circle,
+              color: secondarycolor,
+            ),
+            label: ""),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite,
+              color: secondarycolor,
+            ),
+            label: ""),
+        BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person,
+              color: secondarycolor,
+            ),
+            label: ""),
       ]),
     );
   }
