@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:project1/constants/colors.dart';
 
 class Mobilescreen extends StatefulWidget {
   const Mobilescreen({super.key});
@@ -15,7 +16,9 @@ class _MobilescreenState extends State<Mobilescreen> {
       appBar: AppBar(
         title: Text("Mobile screen"),
       ),
-      bottomNavigationBar: CupertinoTabBar(items: [
+      bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: mobcolor,
+        items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
       ]),
