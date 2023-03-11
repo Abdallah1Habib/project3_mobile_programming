@@ -14,6 +14,9 @@ class _MobilescreenState extends State<Mobilescreen> {
       appBar: AppBar(
         title: Text("Mobile screen"),
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        
+      ]),
     );
   }
 }
