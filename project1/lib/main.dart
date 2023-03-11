@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project1/views/responsive.dart';
+import 'package:project1/views/web.dart';
 
 import 'views/mobile.dart';
 
@@ -13,7 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Responsive(mobile: , web: ,),
+      home: Responsive(
+        mobile: Mobilescreen(),
+        web: Webscreen(),
+      ),
     );
   }
 }
