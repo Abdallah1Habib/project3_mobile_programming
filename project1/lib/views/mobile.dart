@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Mobilescreen extends StatefulWidget {
@@ -14,8 +15,8 @@ class _MobilescreenState extends State<Mobilescreen> {
       appBar: AppBar(
         title: Text("Mobile screen"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+      bottomNavigationBar: CupertinoTabBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
       ]),
     );
   }
