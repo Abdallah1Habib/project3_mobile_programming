@@ -18,7 +18,8 @@ class _MobilescreenState extends State<Mobilescreen> {
       ),
       bottomNavigationBar: CupertinoTabBar(
         onTap: (index){},
-        backgroundColor: mobcolor, items: [
+        backgroundColor: mobcolor, 
+        items: [
         BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
@@ -50,6 +51,9 @@ class _MobilescreenState extends State<Mobilescreen> {
             ),
             label: ""),
       ]),
+      body: PageView(
+        onPageChanged: ,
+      ),
     );
   }
 }
