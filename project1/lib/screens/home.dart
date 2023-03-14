@@ -29,26 +29,29 @@ class _HomeState extends State<Home> {
       ),
       body: Column(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  CircleAvatar(
-                    radius: 26,
-                    backgroundImage: NetworkImage("url"),
-                  ),
-                  SizedBox(
-                    width: 17,
-                  ),
-                  Text(
-                    "Abdallah habib",
-                    style: TextStyle(fontSize: 15),
-                  ),
-                ],
-              ),
-              IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 13),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 26,
+                      backgroundImage: NetworkImage("url"),
+                    ),
+                    SizedBox(
+                      width: 17,
+                    ),
+                    Text(
+                      "Abdallah habib",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ],
+                ),
+                IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+              ],
+            ),
           ),
         ],
       ),
