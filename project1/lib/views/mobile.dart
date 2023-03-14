@@ -56,12 +56,14 @@ class _MobilescreenState extends State<Mobilescreen> {
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
-        children: [
-          Home(),
-          Search(),
-          Addpost(),
-          Profile(),
-        ],
+        // children: [
+        //   Home(),
+        //   Search(),
+        //   Addpost(),
+        //   Profile(),
+        // ],
+
+        children: [],
       ),
     );
   }
