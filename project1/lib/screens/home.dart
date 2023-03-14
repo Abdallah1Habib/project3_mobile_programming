@@ -22,6 +22,7 @@ class _HomeState extends State<Home> {
         ),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.message_outlined)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.logout))
         ],
       ),
     );
