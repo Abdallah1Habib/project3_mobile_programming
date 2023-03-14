@@ -82,6 +82,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
               width: MediaQuery.of(context).size.width,
               child: Text(
                 "10 likes",
