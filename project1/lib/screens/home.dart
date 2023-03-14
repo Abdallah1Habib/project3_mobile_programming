@@ -100,13 +100,16 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 9, 9, 10),
-            width: MediaQuery.of(context).size.width,
-            child: Text(
-              "view all 100 comments",
-              style: TextStyle(
-                fontSize: 16,
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              margin: EdgeInsets.fromLTRB(10, 9, 9, 10),
+              width: MediaQuery.of(context).size.width,
+              child: Text(
+                "view all 100 comments",
+                style: TextStyle(
+                  fontSize: 16,
+                ),
               ),
             ),
           )
