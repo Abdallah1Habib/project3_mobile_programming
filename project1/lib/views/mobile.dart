@@ -18,9 +18,6 @@ class _MobilescreenState extends State<Mobilescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Mobile screen"),
-      ),
       bottomNavigationBar: CupertinoTabBar(
           onTap: (index) {
             _pageController.jumpToPage(index);
