@@ -53,6 +53,7 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
+        Image.network("src",fit: BoxFit.cover,),
         ],
       ),
     );
