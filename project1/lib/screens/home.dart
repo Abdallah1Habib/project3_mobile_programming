@@ -20,6 +20,9 @@ class _HomeState extends State<Home> {
           color: primarycolor,
           height: 32,
         ),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(Icons.message_outlined)),
+        ],
       ),
     );
   }
