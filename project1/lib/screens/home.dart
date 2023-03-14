@@ -102,11 +102,12 @@ class _HomeState extends State<Home> {
           ),
           Container(
             width: MediaQuery.of(context).size.width,
-            child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  "view all 100 comments",
-                )),
+            child: Text(
+              "view all 100 comments",
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            ),
           )
         ],
       ),
