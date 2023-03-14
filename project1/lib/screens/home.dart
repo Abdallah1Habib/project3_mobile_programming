@@ -12,6 +12,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: mobcolor,
       appBar: AppBar(
         backgroundColor: mobcolor,
         title: Image.asset(
