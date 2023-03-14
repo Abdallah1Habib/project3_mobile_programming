@@ -30,6 +30,7 @@ class _HomeState extends State<Home> {
       body: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
                 children: [
