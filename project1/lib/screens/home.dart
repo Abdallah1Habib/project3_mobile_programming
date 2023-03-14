@@ -101,6 +101,7 @@ class _HomeState extends State<Home> {
             ],
           ),
           Container(
+            margin: EdgeInsets.fromLTRB(10, 9, 9, 10),
             width: MediaQuery.of(context).size.width,
             child: Text(
               "view all 100 comments",
