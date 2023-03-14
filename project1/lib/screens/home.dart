@@ -100,11 +100,14 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-          TextButton(
-              onPressed: () {},
-              child: Text(
-                "view all 100 comments",
-              ))
+          Container(
+            width: MediaQuery.of(context).size.width,
+            child: TextButton(
+                onPressed: () {},
+                child: Text(
+                  "view all 100 comments",
+                )),
+          )
         ],
       ),
     );
