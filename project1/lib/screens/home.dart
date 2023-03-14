@@ -31,16 +31,20 @@ class _HomeState extends State<Home> {
         children: [
           Row(
             children: [
-              CircleAvatar(
-                radius: 26,
-                backgroundImage: NetworkImage("url"),
-              ),
-              SizedBox(
-                width: 17,
-              ),
-              Text(
-                "Abdallah habib",
-                style: TextStyle(fontSize: 15),
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 26,
+                    backgroundImage: NetworkImage("url"),
+                  ),
+                  SizedBox(
+                    width: 17,
+                  ),
+                  Text(
+                    "Abdallah habib",
+                    style: TextStyle(fontSize: 15),
+                  ),
+                ],
               ),
               IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
             ],
