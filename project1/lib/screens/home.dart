@@ -93,6 +93,10 @@ class _HomeState extends State<Home> {
               Text(
                 "Username",
                 style: TextStyle(fontSize: 17, color: primarycolor),
+              ),
+              Text(
+                "Image description",
+                style: TextStyle(fontSize: 15, color: primarycolor),
               )
             ],
           )
