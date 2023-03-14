@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
         title: Image.asset(
           "name",
           color: primarycolor,
+          height: 32,
         ),
       ),
     );
