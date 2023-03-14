@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:project1/constants/colors.dart';
 
@@ -23,6 +25,18 @@ class _HomeState extends State<Home> {
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.message_outlined)),
           IconButton(onPressed: () {}, icon: Icon(Icons.logout))
+        ],
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              CircleAvatar(
+                radius: 26,
+                backgroundImage: NetworkImage("url"),
+              )
+            ],
+          ),
         ],
       ),
     );
