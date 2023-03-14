@@ -30,7 +30,7 @@ class _HomeState extends State<Home> {
       body: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16,horizontal: 13),
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 13),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -53,7 +53,12 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-        Image.network("src",fit: BoxFit.cover,),
+          Image.network(
+            "src",
+            fit: BoxFit.cover,
+            height: MediaQuery.of(context).size.height * 0.3,
+            width: MediaQuery.of(context).size.width,
+          ),
         ],
       ),
     );
