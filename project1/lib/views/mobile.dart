@@ -21,39 +21,43 @@ class _MobilescreenState extends State<Mobilescreen> {
       appBar: AppBar(
         title: Text("Mobile screen"),
       ),
-      bottomNavigationBar:
-          CupertinoTabBar(onTap: (index) {}, backgroundColor: mobcolor, items: [
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-              color: primarycolor,
-            ),
-            label: ""),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.search,
-              color: secondarycolor,
-            ),
-            label: ""),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.add_circle,
-              color: secondarycolor,
-            ),
-            label: ""),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.favorite,
-              color: secondarycolor,
-            ),
-            label: ""),
-        BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person,
-              color: secondarycolor,
-            ),
-            label: ""),
-      ]),
+      bottomNavigationBar: CupertinoTabBar(
+          onTap: (index) {
+            _pageController.jumpToPage(index);
+          },
+          backgroundColor: mobcolor,
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: primarycolor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.search,
+                  color: secondarycolor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.add_circle,
+                  color: secondarycolor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite,
+                  color: secondarycolor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: secondarycolor,
+                ),
+                label: ""),
+          ]),
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
