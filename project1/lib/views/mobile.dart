@@ -14,6 +14,7 @@ class Mobilescreen extends StatefulWidget {
 }
 
 class _MobilescreenState extends State<Mobilescreen> {
+  final _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,14 +57,13 @@ class _MobilescreenState extends State<Mobilescreen> {
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
-        // children: [
-        //   Home(),
-        //   Search(),
-        //   Addpost(),
-        //   Profile(),
-        // ],
-
-        children: [],
+        controller: _pageController,
+        children: [
+          Home(),
+          Search(),
+          Addpost(),
+          Profile(),
+        ],
       ),
     );
   }
