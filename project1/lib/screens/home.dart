@@ -97,9 +97,14 @@ class _HomeState extends State<Home> {
               Text(
                 "Image description",
                 style: TextStyle(fontSize: 15, color: primarycolor),
-              )
+              ),
             ],
-          )
+          ),
+          TextButton(
+              onPressed: () {},
+              child: Text(
+                "view all 100 comments",
+              ))
         ],
       ),
     );
