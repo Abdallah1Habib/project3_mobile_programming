@@ -15,6 +15,13 @@ class Mobilescreen extends StatefulWidget {
 
 class _MobilescreenState extends State<Mobilescreen> {
   final _pageController = PageController();
+
+  @override
+  void dis() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
