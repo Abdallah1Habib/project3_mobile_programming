@@ -16,10 +16,8 @@ class _MobilescreenState extends State<Mobilescreen> {
       appBar: AppBar(
         title: Text("Mobile screen"),
       ),
-      bottomNavigationBar: CupertinoTabBar(
-        onTap: (index){},
-        backgroundColor: mobcolor, 
-        items: [
+      bottomNavigationBar:
+          CupertinoTabBar(onTap: (index) {}, backgroundColor: mobcolor, items: [
         BottomNavigationBarItem(
             icon: Icon(
               Icons.home,
@@ -52,7 +50,9 @@ class _MobilescreenState extends State<Mobilescreen> {
             label: ""),
       ]),
       body: PageView(
-        onPageChanged: ,
+        onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        children: [],
       ),
     );
   }
