@@ -15,6 +15,7 @@ class Mobilescreen extends StatefulWidget {
 
 class _MobilescreenState extends State<Mobilescreen> {
   final _pageController = PageController();
+  int page = 0;
 
   @override
   void dis() {
@@ -28,13 +29,16 @@ class _MobilescreenState extends State<Mobilescreen> {
       bottomNavigationBar: CupertinoTabBar(
           onTap: (index) {
             _pageController.jumpToPage(index);
+            setState(() {
+              page = index;
+            });
           },
           backgroundColor: mobcolor,
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: primarycolor,
+                  color: page == 0 ? primarycolor : secondarycolor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
