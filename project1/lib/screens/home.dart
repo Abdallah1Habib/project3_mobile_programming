@@ -34,7 +34,14 @@ class _HomeState extends State<Home> {
               CircleAvatar(
                 radius: 26,
                 backgroundImage: NetworkImage("url"),
-              )
+              ),
+              SizedBox(
+                width: 17,
+              ),
+              Text(
+                "Abdallah habib",
+                style: TextStyle(fontSize: 15),
+              ),
             ],
           ),
         ],
