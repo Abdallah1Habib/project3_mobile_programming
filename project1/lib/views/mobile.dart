@@ -50,19 +50,19 @@ class _MobilescreenState extends State<Mobilescreen> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_circle,
-                  color: secondarycolor,
+                  color: page == 2 ? primarycolor : secondarycolor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite,
-                  color: secondarycolor,
+                  color: page == 3 ? primarycolor : secondarycolor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
-                  color: secondarycolor,
+                  color: page == 4 ? primarycolor : secondarycolor,
                 ),
                 label: ""),
           ]),
