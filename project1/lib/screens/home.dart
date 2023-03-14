@@ -112,7 +112,17 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
-          )
+          ),
+          Container(
+            margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
+            width: MediaQuery.of(context).size.width,
+            child: Text(
+              "14/3/2023",
+              style: TextStyle(
+                fontSize: 16,
+              ),
+            ),
+          ),
         ],
       ),
     );
