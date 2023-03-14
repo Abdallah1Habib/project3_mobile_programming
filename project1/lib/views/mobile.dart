@@ -44,7 +44,7 @@ class _MobilescreenState extends State<Mobilescreen> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color: secondarycolor,
+                  color: page == 1 ? primarycolor : secondarycolor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
