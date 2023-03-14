@@ -59,7 +59,9 @@ class _HomeState extends State<Home> {
             height: MediaQuery.of(context).size.height * 0.3,
             width: MediaQuery.of(context).size.width,
           ),
-        Row(children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
           Row(
             children: [
               IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border)),
