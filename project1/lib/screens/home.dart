@@ -83,7 +83,10 @@ class _HomeState extends State<Home> {
           ),
           Container(
               width: MediaQuery.of(context).size.width,
-              child: Text("10 likes")),
+              child: Text(
+                "10 likes",
+                style: TextStyle(fontSize: 16),
+              )),
         ],
       ),
     );
