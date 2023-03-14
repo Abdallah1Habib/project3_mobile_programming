@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project1/constants/colors.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -12,7 +13,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Image.asset("name"),
+        title: Image.asset(
+          "name",
+          color: primarycolor,
+        ),
       ),
     );
   }
