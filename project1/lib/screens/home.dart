@@ -88,6 +88,14 @@ class _HomeState extends State<Home> {
                 "10 likes",
                 style: TextStyle(fontSize: 16),
               )),
+          Row(
+            children: [
+              Text(
+                "Username",
+                style: TextStyle(fontSize: 17, color: primarycolor),
+              )
+            ],
+          )
         ],
       ),
     );
