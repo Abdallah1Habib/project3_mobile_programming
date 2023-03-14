@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project1/constants/colors.dart';
+import 'package:project1/screens/add_post.dart';
+import 'package:project1/screens/home.dart';
+import 'package:project1/screens/profile.dart';
+import 'package:project1/screens/search.dart';
 
 class Mobilescreen extends StatefulWidget {
   const Mobilescreen({super.key});
@@ -52,7 +56,12 @@ class _MobilescreenState extends State<Mobilescreen> {
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
-        children: [],
+        children: [
+          Home(),
+          Search(),
+          Addpost(),
+          Profile(),
+        ],
       ),
     );
   }
