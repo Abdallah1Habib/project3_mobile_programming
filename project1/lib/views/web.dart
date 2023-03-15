@@ -25,28 +25,28 @@ class _WebscreenState extends State<Webscreen> {
             onPressed: () {},
             icon: Icon(
               Icons.search,
-              color: primarycolor,
+              color: secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.add_circle,
-              color: primarycolor,
+              color: secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.favorite,
-              color: primarycolor,
+              color: secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {},
             icon: Icon(
               Icons.person,
-              color: primarycolor,
+              color: secondarycolor,
             ),
           ),
         ],
