@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:project1/constants/colors.dart';
 import 'package:project1/screens/add_post.dart';
+import 'package:project1/screens/favorite.dart';
 import 'package:project1/screens/home.dart';
 import 'package:project1/screens/profile.dart';
 import 'package:project1/screens/search.dart';
@@ -75,6 +76,7 @@ class _MobilescreenState extends State<Mobilescreen> {
           Search(),
           Addpost(),
           Profile(),
+          Fav(),
         ],
       ),
     );
