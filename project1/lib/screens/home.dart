@@ -36,7 +36,8 @@ class _HomeState extends State<Home> {
           borderRadius: BorderRadius.circular(12),
           color: mobcolor,
         ),
-        margin: EdgeInsets.symmetric(vertical: 16, horizontal: 13),
+        margin: EdgeInsets.symmetric(
+            vertical: 11, horizontal: widthscreen > 600 ? 100 : 0),
         child: Column(
           children: [
             Padding(
