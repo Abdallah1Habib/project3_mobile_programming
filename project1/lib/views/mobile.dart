@@ -75,8 +75,8 @@ class _MobilescreenState extends State<Mobilescreen> {
           Home(),
           Search(),
           Addpost(),
-          Profile(),
           Fav(),
+          Profile(),
         ],
       ),
     );
