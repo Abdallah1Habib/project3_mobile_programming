@@ -13,20 +13,24 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
+    final double widthscreen = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mobcolor,
-      appBar: AppBar(
-        backgroundColor: mobcolor,
-        title: Image.asset(
-          "name",
-          color: primarycolor,
-          height: 32,
-        ),
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.message_outlined)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.logout))
-        ],
-      ),
+      appBar: widthscreen > 600
+          ? null
+          : AppBar(
+              backgroundColor: mobcolor,
+              title: Image.asset(
+                "name",
+                color: primarycolor,
+                height: 32,
+              ),
+              actions: [
+                IconButton(
+                    onPressed: () {}, icon: Icon(Icons.message_outlined)),
+                IconButton(onPressed: () {}, icon: Icon(Icons.logout))
+              ],
+            ),
       body: Column(
         children: [
           Padding(

@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:project1/constants/colors.dart';
 
+import '../screens/add_post.dart';
+import '../screens/favorite.dart';
+import '../screens/home.dart';
+import '../screens/profile.dart';
+import '../screens/search.dart';
+
 class Webscreen extends StatefulWidget {
   const Webscreen({super.key});
 
@@ -56,6 +62,18 @@ class _WebscreenState extends State<Webscreen> {
           color: primarycolor,
           height: 32,
         ),
+      ),
+      body: PageView(
+        onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        //controller: _pageController,
+        children: [
+          Home(),
+          Search(),
+          Addpost(),
+          Fav(),
+          Profile(),
+        ],
       ),
     );
   }
