@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
                         color: secondarycolor,
                       ),
                       child: CircleAvatar(
-                        radius: 26,
+                        radius: 30,
                         backgroundImage: NetworkImage("url"),
                       ),
                     ),
