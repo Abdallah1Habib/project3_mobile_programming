@@ -32,6 +32,10 @@ class _HomeState extends State<Home> {
               ],
             ),
       body: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          color: mobcolor,
+        ),
         margin: EdgeInsets.symmetric(vertical: 16, horizontal: 13),
         child: Column(
           children: [
