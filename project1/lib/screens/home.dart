@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
       appBar: widthscreen > 600
           ? null
           : AppBar(
-              backgroundColor: mobcolor,
+              backgroundColor: widthscreen > 600 ? webcolor : mobcolor,
               title: Image.asset(
                 "name",
                 color: primarycolor,
