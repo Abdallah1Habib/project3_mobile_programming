@@ -36,9 +36,16 @@ class _HomeState extends State<Home> {
               children: [
                 Row(
                   children: [
-                    CircleAvatar(
-                      radius: 26,
-                      backgroundImage: NetworkImage("url"),
+                    Container(
+                      padding: EdgeInsets.all(3),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: secondarycolor,
+                      ),
+                      child: CircleAvatar(
+                        radius: 26,
+                        backgroundImage: NetworkImage("url"),
+                      ),
                     ),
                     SizedBox(
                       width: 17,
