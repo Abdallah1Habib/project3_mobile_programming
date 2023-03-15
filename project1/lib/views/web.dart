@@ -50,6 +50,11 @@ class _WebscreenState extends State<Webscreen> {
             ),
           ),
         ],
+        title: Image.asset(
+          "name",
+          color: primarycolor,
+          height: 32,
+        ),
       ),
     );
   }
