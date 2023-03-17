@@ -98,6 +98,7 @@ class _HomeState extends State<Profile> {
             thickness: 0.07,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton.icon(
                 onPressed: () {},
