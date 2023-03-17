@@ -11,6 +11,7 @@ class Profile extends StatefulWidget {
 class _HomeState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: mobcolor,
@@ -95,7 +96,7 @@ class _HomeState extends State<Profile> {
           ),
           Divider(
             color: Colors.white,
-            thickness: 0.07,
+            thickness: width > 600 ? 0.4 : 0.07,
           ),
           SizedBox(
             height: 8,
@@ -153,7 +154,7 @@ class _HomeState extends State<Profile> {
           ),
           Divider(
             color: Colors.white,
-            thickness: 0.07,
+            thickness: width > 600 ? 0.4 : 0.07,
           ),
           Expanded(
             child: GridView.builder(
