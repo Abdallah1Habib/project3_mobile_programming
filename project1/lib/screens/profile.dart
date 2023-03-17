@@ -37,6 +37,13 @@ class _HomeState extends State<Profile> {
                     "1",
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   ),
+                  SizedBox(
+                    height: 7,
+                  ),
+                  Text(
+                    "Posts",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  )
                 ],
               )
             ],
