@@ -19,6 +19,7 @@ class _HomeState extends State<Profile> {
       body: Column(
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
                 padding: EdgeInsets.all(3),
