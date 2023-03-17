@@ -29,46 +29,61 @@ class _WebscreenState extends State<Webscreen> {
           IconButton(
             onPressed: () {
               navigatescreen(0);
+              setState(() {
+                page = 0;
+              });
             },
             icon: Icon(
               Icons.home,
-              color: page == 0?primarycolor:secondarycolor,
+              color: page == 0 ? primarycolor : secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {
               navigatescreen(1);
+              setState(() {
+                page = 1;
+              });
             },
             icon: Icon(
               Icons.search,
-              color: page == 1?primarycolor:secondarycolor,
+              color: page == 1 ? primarycolor : secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {
               navigatescreen(2);
+              setState(() {
+                page = 2;
+              });
             },
             icon: Icon(
               Icons.add_circle,
-              color: page == 2?primarycolor:secondarycolor,
+              color: page == 2 ? primarycolor : secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {
               navigatescreen(3);
+              setState(() {
+                page = 3;
+              });
             },
             icon: Icon(
               Icons.favorite,
-              color: page == 3?primarycolor:secondarycolor,
+              color: page == 3 ? primarycolor : secondarycolor,
             ),
           ),
           IconButton(
             onPressed: () {
               navigatescreen(4);
+              setState(() {
+                page = 4;
+              });
             },
             icon: Icon(
               Icons.person,
-              color: page == 4?primarycolor:secondarycolor,
+              color: page == 4 ? primarycolor : secondarycolor,
             ),
           ),
         ],
