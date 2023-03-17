@@ -12,7 +12,29 @@ class _HomeState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: mobcolor, title: Text("username")),
+      appBar: AppBar(
+        backgroundColor: mobcolor,
+        title: Text("username"),
+      ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.all(3),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: secondarycolor,
+                ),
+                child: CircleAvatar(
+                  radius: 30,
+                  backgroundImage: NetworkImage("url"),
+                ),
+              ),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
