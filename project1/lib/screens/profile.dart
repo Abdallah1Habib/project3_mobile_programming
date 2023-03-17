@@ -96,6 +96,15 @@ class _HomeState extends State<Profile> {
           Divider(
             color: Colors.white,
             thickness: 0.07,
+          ),
+          Row(
+            children: [
+              ElevatedButton.icon(
+                onPressed: () {},
+                icon: Icon(Icons.edit),
+                label: Text("Edit profile"),
+              )
+            ],
           )
         ],
       ),
