@@ -101,7 +101,11 @@ class _HomeState extends State<Profile> {
             children: [
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: Icon(Icons.edit),
+                icon: Icon(
+                  Icons.edit,
+                  color: Colors.grey,
+                  size: 24,
+                ),
                 label: Text("Edit profile"),
               )
             ],
