@@ -26,35 +26,45 @@ class _WebscreenState extends State<Webscreen> {
       appBar: AppBar(
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              navigatescreen(0);
+            },
             icon: Icon(
               Icons.home,
               color: primarycolor,
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              navigatescreen(1);
+            },
             icon: Icon(
               Icons.search,
               color: secondarycolor,
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              navigatescreen(2);
+            },
             icon: Icon(
               Icons.add_circle,
               color: secondarycolor,
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              navigatescreen(3);
+            },
             icon: Icon(
               Icons.favorite,
               color: secondarycolor,
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              navigatescreen(4);
+            },
             icon: Icon(
               Icons.person,
               color: secondarycolor,
