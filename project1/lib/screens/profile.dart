@@ -115,7 +115,8 @@ class _HomeState extends State<Profile> {
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(mobcolor),
                   padding: MaterialStateProperty.all(
-                    EdgeInsets.symmetric(vertical: 10, horizontal: 33),
+                    EdgeInsets.symmetric(
+                        vertical: width > 600 ? 19 : 10, horizontal: 33),
                   ),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
@@ -137,7 +138,8 @@ class _HomeState extends State<Profile> {
                   backgroundColor:
                       MaterialStateProperty.all(Colors.redAccent[300]),
                   padding: MaterialStateProperty.all(
-                    EdgeInsets.symmetric(vertical: 10, horizontal: 33),
+                    EdgeInsets.symmetric(
+                        vertical: width > 600 ? 19 : 10, horizontal: 33),
                   ),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
