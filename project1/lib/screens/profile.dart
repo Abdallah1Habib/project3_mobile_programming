@@ -45,6 +45,21 @@ class _HomeState extends State<Profile> {
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   )
                 ],
+              ),
+              Column(
+                children: [
+                  Text(
+                    "15",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 7,
+                  ),
+                  Text(
+                    "Followers",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  )
+                ],
               )
             ],
           )
