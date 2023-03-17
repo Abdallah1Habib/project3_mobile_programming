@@ -120,6 +120,28 @@ class _HomeState extends State<Profile> {
                   ),
                 ),
               ),
+              ElevatedButton.icon(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.logout,
+                  color: Colors.grey,
+                  size: 24,
+                ),
+                label: Text("Logout", style: TextStyle(fontSize: 17)),
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.redAccent[300]),
+                  padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 33),
+                  ),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                      side: BorderSide(color: Colors.grey),
+                    ),
+                  ),
+                ),
+              ),
             ],
           )
         ],
