@@ -159,8 +159,17 @@ class _HomeState extends State<Profile> {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 3 / 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 33,
               ),
-              itemBuilder: itemBuilder)
+              itemCount: 3,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.amber,
+                );
+              }),
         ],
       ),
     );
