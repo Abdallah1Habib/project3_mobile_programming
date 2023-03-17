@@ -46,6 +46,9 @@ class _HomeState extends State<Profile> {
                   )
                 ],
               ),
+              SizedBox(
+                width: 17,
+              ),
               Column(
                 children: [
                   Text(
@@ -57,6 +60,24 @@ class _HomeState extends State<Profile> {
                   ),
                   Text(
                     "Followers",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  )
+                ],
+              ),
+              SizedBox(
+                width: 17,
+              ),
+              Column(
+                children: [
+                  Text(
+                    "3",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
+                  SizedBox(
+                    height: 7,
+                  ),
+                  Text(
+                    "Following",
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   )
                 ],
