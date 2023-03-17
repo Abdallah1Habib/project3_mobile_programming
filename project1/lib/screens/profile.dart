@@ -159,21 +159,24 @@ class _HomeState extends State<Profile> {
             thickness: width > 600 ? 0.4 : 0.07,
           ),
           Expanded(
-            child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  childAspectRatio: 3 / 2,
-                  crossAxisSpacing: 10,
-                  mainAxisSpacing: 33,
-                ),
-                itemCount: 3,
-                itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.amber,
-                  );
-                }),
+            child: Padding(
+              padding: EdgeInsets.all(width > 600 ? 55 : 3),
+              child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 3 / 2,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 33,
+                  ),
+                  itemCount: 3,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Container(
+                      height: 200,
+                      width: 200,
+                      color: Colors.amber,
+                    );
+                  }),
+            ),
           ),
         ],
       ),
