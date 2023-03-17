@@ -12,11 +12,12 @@ class registerpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey[150],
         body: Padding(
-          padding: const EdgeInsets.all(30.0),
+          padding: EdgeInsets.all(width > 600 ? width * 0.25 : 15),
           child: SingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
