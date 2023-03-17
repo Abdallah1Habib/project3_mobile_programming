@@ -97,6 +97,9 @@ class _HomeState extends State<Profile> {
             color: Colors.white,
             thickness: 0.07,
           ),
+          SizedBox(
+            height: 8,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -144,7 +147,14 @@ class _HomeState extends State<Profile> {
                 ),
               ),
             ],
-          )
+          ),
+          SizedBox(
+            height: 8,
+          ),
+          Divider(
+            color: Colors.white,
+            thickness: 0.07,
+          ),
         ],
       ),
     );
