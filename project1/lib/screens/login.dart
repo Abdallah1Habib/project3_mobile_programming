@@ -13,11 +13,13 @@ class loginpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final double width = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey[150],
         body: Padding(
-          padding: const EdgeInsets.all(30.0),
+          padding:
+              EdgeInsets.symmetric(horizontal: width > 600 ? width * 0.25 : 15),
           child: Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
