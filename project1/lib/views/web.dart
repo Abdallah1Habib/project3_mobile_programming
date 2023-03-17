@@ -15,6 +15,7 @@ class Webscreen extends StatefulWidget {
 }
 
 class _WebscreenState extends State<Webscreen> {
+  final PageController _pageController = PageController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +67,7 @@ class _WebscreenState extends State<Webscreen> {
       body: PageView(
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
-        //controller: _pageController,
+        controller: _pageController,
         children: [
           Home(),
           Search(),

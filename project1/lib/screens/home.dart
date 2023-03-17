@@ -37,7 +37,8 @@ class _HomeState extends State<Home> {
           color: mobcolor,
         ),
         margin: EdgeInsets.symmetric(
-            vertical: 11, horizontal: widthscreen > 600 ? 100 : 0),
+            vertical: 11,
+            horizontal: widthscreen > 600 ? widthscreen * 0.25 : 0),
         child: Column(
           children: [
             Padding(
