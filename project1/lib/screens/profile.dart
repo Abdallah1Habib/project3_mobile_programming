@@ -84,8 +84,19 @@ class _HomeState extends State<Profile> {
                 ],
               )
             ],
+          ),
+          Container(
+            child: Text("Hello"),
+            margin: EdgeInsets.fromLTRB(15, 22, 0, 0),
+            width: MediaQuery.of(context).size.width,
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Divider(
+            color: Colors.white,
+            thickness: 0.07,
           )
-        ,Text("Hello")
         ],
       ),
     );
