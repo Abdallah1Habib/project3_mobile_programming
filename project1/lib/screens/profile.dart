@@ -85,6 +85,7 @@ class _HomeState extends State<Profile> {
               )
             ],
           )
+        ,Text("Hello")
         ],
       ),
     );
