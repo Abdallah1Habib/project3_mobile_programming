@@ -31,6 +31,14 @@ class _HomeState extends State<Profile> {
                   backgroundImage: NetworkImage("url"),
                 ),
               ),
+              Column(
+                children: [
+                  Text(
+                    "1",
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              )
             ],
           )
         ],
