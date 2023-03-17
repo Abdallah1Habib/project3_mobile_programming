@@ -155,6 +155,12 @@ class _HomeState extends State<Profile> {
             color: Colors.white,
             thickness: 0.07,
           ),
+          GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                childAspectRatio: 3 / 2,
+              ),
+              itemBuilder: itemBuilder)
         ],
       ),
     );
