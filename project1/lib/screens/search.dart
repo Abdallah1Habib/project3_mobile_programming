@@ -11,7 +11,10 @@ class _HomeState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Search")),
+      appBar: AppBar(
+          title: TextFormField(
+        decoration: const InputDecoration(labelText: "Search for a user..."),
+      )),
     );
   }
 }
