@@ -16,6 +16,7 @@ class Webscreen extends StatefulWidget {
 
 class _WebscreenState extends State<Webscreen> {
   final PageController _pageController = PageController();
+  int page = 0;
   navigatescreen(int indexx) {
     _pageController.jumpToPage(indexx);
   }
@@ -31,7 +32,7 @@ class _WebscreenState extends State<Webscreen> {
             },
             icon: Icon(
               Icons.home,
-              color: primarycolor,
+              color: page == 0?primarycolor:secondarycolor,
             ),
           ),
           IconButton(
@@ -40,7 +41,7 @@ class _WebscreenState extends State<Webscreen> {
             },
             icon: Icon(
               Icons.search,
-              color: secondarycolor,
+              color: page == 1?primarycolor:secondarycolor,
             ),
           ),
           IconButton(
@@ -49,7 +50,7 @@ class _WebscreenState extends State<Webscreen> {
             },
             icon: Icon(
               Icons.add_circle,
-              color: secondarycolor,
+              color: page == 2?primarycolor:secondarycolor,
             ),
           ),
           IconButton(
@@ -58,7 +59,7 @@ class _WebscreenState extends State<Webscreen> {
             },
             icon: Icon(
               Icons.favorite,
-              color: secondarycolor,
+              color: page == 3?primarycolor:secondarycolor,
             ),
           ),
           IconButton(
@@ -67,7 +68,7 @@ class _WebscreenState extends State<Webscreen> {
             },
             icon: Icon(
               Icons.person,
-              color: secondarycolor,
+              color: page == 4?primarycolor:secondarycolor,
             ),
           ),
         ],
