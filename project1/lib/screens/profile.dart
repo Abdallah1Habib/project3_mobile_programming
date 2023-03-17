@@ -106,8 +106,20 @@ class _HomeState extends State<Profile> {
                   color: Colors.grey,
                   size: 24,
                 ),
-                label: Text("Edit profile"),
-              )
+                label: Text("Edit profile", style: TextStyle(fontSize: 17)),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(mobcolor),
+                  padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 33),
+                  ),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                      side: BorderSide(color: Colors.grey),
+                    ),
+                  ),
+                ),
+              ),
             ],
           )
         ],
